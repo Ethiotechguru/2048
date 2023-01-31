@@ -2,8 +2,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #f8a5c2;
-  color: #776e65;
+  background: purple;
+  color: white;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
@@ -72,7 +72,7 @@ h1.title {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #eee4da; }
+    color: #eee; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -149,7 +149,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #e66767;
+  /* background: #e66767; */
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -311,7 +311,9 @@ hr {
   -webkit-transform: translate(363px, 363px);
   -moz-transform: translate(363px, 363px);
   -ms-transform: translate(363px, 363px);
-  transform: translate(363px, 363px); }
+  transform: translate(363px, 363px);
+  -o-transform: translate(363px, 363px);
+}
 
 .tile {
   position: absolute;
@@ -655,13 +657,20 @@ hr {
     margin-right: 10px;
     float: left;
     border-radius: 3px;
-    background: rgba(238, 228, 218, 0.35); }
+    background: rgba(238, 228, 218, 0.35);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
     .grid-cell:last-child {
       margin-right: 0; }
 
   .tile-container {
     position: absolute;
-    z-index: 2; }
+    z-index: 2;
+    
+  }
 
   .tile, .tile .tile-inner {
     width: 58px;
